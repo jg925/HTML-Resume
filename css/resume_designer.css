@@ -103,7 +103,9 @@ aside a:focus,
 aside a:hover {
     /*color: #151D29;*/
 }
-
+.hidden {
+  display: none;
+}
 .wrapper {
     width: 90%;
     /*    max-width: 960px;*/
@@ -198,6 +200,9 @@ h1 {
 .hidden {
     display: none!important;
     visibility: hidden
+}
+.section-caption {
+  font-style: italic;
 }
 .visuallyhidden {
     border: 0;
