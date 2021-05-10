@@ -137,6 +137,10 @@
      /*color: #151D29;*/
  }
  
+ .header-container{
+    max-width: 960px;
+    margin: 0 auto;
+ }
  #cut-me {
      color: #888;
      font-weight: 700;
@@ -156,17 +160,16 @@
  }
  
  .wrapper {
-     width: 90%;
-     /*    max-width: 960px;*/
+     /* width: 90%; */
+     max-width: 960px;
      /*width: 960px;*/
      margin: 0 5%;
  }
  
- .header-container,
- .main {
+ .main.wrapper.clearfix {
      color: #151D29;
      max-width: 960px;
-     /* margin: 0 auto; */
+     margin: 0 5%;
  }
  
  .title {
@@ -531,13 +534,14 @@
  header>.aside-container {
      margin: 0 auto;
      text-align: center;
+     float: right;
  }
  
  aside {
      /* Instead of auto-sizing ("display: inline-block") to fit, we manually cap the size. */
      /* This allows for children to have relative width and scale down smoothly as the window shrinks in width. */
-     max-width: 75%;
-     margin-top: 3em;
+     /* max-width: 75%; */
+     margin-top: 3.5em;
      /* height: 2.5em; */
      /* background-image:
          linear-gradient(rgba(0, 0, 0, 0.05) 50%, 0, transparent 100%),
@@ -553,7 +557,7 @@
  
  aside>p {
      font-size: 8pt;
-     line-height: 3em;
+     line-height: 1.5em;
      margin: 0 auto;
      display: block;
      /* flex-grow: 1; */
