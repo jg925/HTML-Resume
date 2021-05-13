@@ -50,7 +50,7 @@
      /* has to be scroll, not auto */
  
      -webkit-overflow-scrolling: touch;
-     background-image: url("../watercolor-paper-light.jpg");
+     background-image: url("../watercolor-paper-light-2.jpg");
      background-size: 600px;
      background-repeat: repeat;
  }
@@ -116,25 +116,19 @@
      color: rgb(2, 103, 243);
  }
  
- aside a:active,
- aside a:focus,
- aside a:hover {
-     text-shadow: 0px 0px 2px rgba(255, 255, 255, .8);
- }
- 
  aside a strong {
-     font-weight: 400
+     font-weight: 700
  }
  
  aside a:link,
  aside a:visited {
-     color: black;
+     color: #333333;
      font-weight: 700;
  }
  
  aside a:focus,
  aside a:hover {
-     /*color: #151D29;*/
+     color: #233e66;
  }
  
  .header-container{
@@ -219,7 +213,6 @@
  
  .list time {
      float: right;
-     margin-top: .7em;
  }
  
  .list section {
@@ -378,21 +371,11 @@
  
  header .title {
      font-size: 32pt;
-     font-weight: 500;
-     /* text-transform: uppercase; */
-     /* text-align: center; */
      margin: 0.75em 0 0 0;
-     /* letter-spacing: .05em; */
-     background: -webkit-linear-gradient(#5a5a5a, #000);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
  }
  
  header .subtitle {
-     /* text-align: center; */
-     /* text-transform: uppercase; */
      font-weight: 300;
-     /* letter-spacing: .05em; */
      font-size: 12pt;
      margin-bottom: 1em;
  }
@@ -443,6 +426,14 @@
      overflow: hidden;
      display: flex;
  }
+
+ .three-col>.section {
+     max-width: 35%;
+ }
+
+ #education p {
+    display: inline-block;
+}
  
  .three-col a {
      color: black;
@@ -538,30 +529,15 @@
  }
  
  aside {
-     /* Instead of auto-sizing ("display: inline-block") to fit, we manually cap the size. */
-     /* This allows for children to have relative width and scale down smoothly as the window shrinks in width. */
-     /* max-width: 75%; */
-     margin-top: 3.5em;
-     /* height: 2.5em; */
-     /* background-image:
-         linear-gradient(rgba(0, 0, 0, 0.05) 50%, 0, transparent 100%),
-         linear-gradient(-45deg, #0090C0, rgb(0, 100, 139)); */
-     /* color: black; */
-     /* justify-content: space-between; */
-     /* align-content: end; */
-     /* display: flex; */
-     /* flex-direction: row; */
-     /* align-items: stretch; */
+     margin-top: 3.75em;
      text-align: right;
  }
  
  aside>p {
      font-size: 8pt;
-     line-height: 1.5em;
+     line-height: 1.4em;
      margin: 0 auto;
      display: block;
-     /* flex-grow: 1; */
-     /* float: right; */
  }
  
  aside>p.info-divider {
@@ -570,13 +546,6 @@
      opacity: 0.65;
  }
  
- /*aside>p::after {
-      content: "//";
-  }
-  aside>p:last-child::after {
-      content: "";
-  }
-  */
  aside>p>a {
      display: inline-block;
  }
@@ -610,8 +579,6 @@
  @media only screen and (max-width: 720px) {
      aside {
          max-width: 100%;
-         /* height: 1.75em; */
-         /* text-align: right; */
      }
  
      aside>p {
@@ -674,11 +641,8 @@
      }
  
      * {
-         /*        color: #000!important;*/
- 
          box-shadow: none !important;
          text-shadow: none !important;
-         /*        background: transparent!important*/
      }
  
      .no-print,
@@ -723,14 +687,11 @@
      }
  
      aside {
-         width: 78%;
-         max-width: 530px;
-         height: 2em;
          -webkit-print-color-adjust: exact;
      }
  
      aside>p {
-         line-height: 2.5em;
+         line-height: 1.2em;
      }
  
      header .title {
@@ -749,10 +710,6 @@
      .main.clearfix {
          margin-bottom: 0em;
          margin-top: 2mm;
-     }
- 
-     .header-container header {
-         border-bottom: 1px solid #AAAAAA;
      }
  
      .left-container>article>section {
@@ -786,8 +743,6 @@
      }
  
      .side-label-container {
-         /* background-color: rgb(10, 92, 138); */
- 
          -webkit-print-color-adjust: exact;
      }
  
@@ -812,7 +767,6 @@
  
      .rotated-sidebar h2 {
          font-size: 13pt;
-         /* -webkit-transform: translate(-1px, -1px); */
      }
  
      .updated-date {
