@@ -217,7 +217,6 @@ h1 {
 
 .list time {
     float: right;
-    margin-top: .7em;
 }
 
 .list section {
@@ -229,7 +228,7 @@ h1 {
 .list p {
     margin-top: 0;
     margin-bottom: .3em;
-    clear: left
+    clear: left;
 }
 
 .list h3 {
@@ -376,8 +375,6 @@ html.no-js {
 
 header .title {
     font-size: 32pt;
-    font-weight: 500;
-    /* text-transform: uppercase; */
     text-align: center;
     margin: 0.75em 0 0 0;
     /* letter-spacing: .05em; */
@@ -441,6 +438,19 @@ abbr[title]:after {
     margin-bottom: 1em;
     overflow: hidden;
     display: flex;
+}
+
+.three-col>.section {
+    max-width: 35%;
+}
+
+#education p {
+   display: inline-block;
+}
+#education h3 {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.25em;
 }
 
 .three-col a {
@@ -625,6 +635,14 @@ a[href^="#"]:after {
         height: 720px;
     }
 
+    .list p {
+        padding-right: 6em;
+    }
+    
+    .three-col>.list time {
+        margin-right: 4em;
+    }
+
     .three-col>section,
     #skills,
     #language {
@@ -632,11 +650,11 @@ a[href^="#"]:after {
     }
 
     #education {
-        margin-bottom: 61px;
+        margin-bottom: 4em;
     }
 
     #skills {
-        margin-bottom: 0;
+        margin-bottom: 2em;
     }
 
     #language {
@@ -659,8 +677,15 @@ a[href^="#"]:after {
         -webkit-padding-before: 0mm;
         -webkit-padding-start: 0mm;
         -webkit-padding-end: 0mm;
-        background-color: #fff;
-        background-image: none;
+        /* background-color: #fff; */
+        /* background-image: none; */
+    }
+    header .title{
+      /* color: black; */
+      /* background: none; */
+      -webkit-text-fill-color: black;
+      margin-top: 0.5em;
+      margin-bottom: 0.25em;
     }
 
     body {
@@ -728,10 +753,6 @@ a[href^="#"]:after {
         line-height: 2.5em;
     }
 
-    header .title {
-        margin-bottom: .5em;
-    }
-
     .subtitle {
         display: none;
         height: 1em;
@@ -744,10 +765,6 @@ a[href^="#"]:after {
     .main.clearfix {
         margin-bottom: 0em;
         margin-top: 2mm;
-    }
-
-    .header-container header {
-        border-bottom: 1px solid #AAAAAA;
     }
 
     .left-container>article>section {
@@ -782,7 +799,6 @@ a[href^="#"]:after {
 
     .side-label-container {
         /* background-color: rgb(10, 92, 138); */
-
         -webkit-print-color-adjust: exact;
     }
 
