@@ -72,6 +72,7 @@ body {
 .main.clearfix {
     margin-bottom: 3em;
     margin-top: 3em;
+    
 }
 a:link {
     color: rgb(10, 92, 138);
@@ -179,8 +180,8 @@ h1 {
 }
 
 .updated-date {
-    position: absolute;
-    bottom: -3em;
+    position: flex;
+    /*bottom: -3em;*/
     font-style: italic;
     color: #666;
     font-size: 12px;
@@ -275,6 +276,7 @@ figure[role=loader] {
 }
 body,
 html {}.no-js body,
+
 html.no-js {
     overflow: auto
 }
@@ -325,6 +327,7 @@ abbr[title]:after {
     width: 25%;
     margin: -2em 0em 0 42px;
     float: left;
+    
 }
 .left-container .list section {
     -webkit-transform: translate(0px, -8px);
@@ -492,8 +495,10 @@ a[href^="#"]:after {
     header .title {
         margin-bottom: .5em;
     }
+    /*Fix subtitle so that it shows on printed pdf resume.*/
     .subtitle {
-        display: none;
+        /*overflow-wrap: break-word;*/
+        /*display: none;*/
         height: 1em;
     }
     .section-footer {
