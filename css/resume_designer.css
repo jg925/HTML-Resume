@@ -385,7 +385,7 @@ abbr[title]:after {
     text-transform: uppercase;
     line-height: 1em;
     padding: .4em 1.5em .3em;
-    margin-top: .25em;
+    margin-top: 0em;
 }
 .right-container .list {
     margin: 0 2em 2em 1em;
